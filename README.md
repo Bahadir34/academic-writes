@@ -211,9 +211,9 @@ Add screenshots inside `front-end/public/` and link them here.
 ![App demo](./front-end/public/academics.gif)
 
 ### Screenshots
-![Home](./front-end/public/academics-home.png)
-![Assays](./front-end/public/academics-assays.png)
-![Add Assay](./front-end/public/academics-add-assay.png)
+![Home](./project-views/academics-home.png)
+![Assays](./project-views/academics-assays.png)
+![Add Assay](./project-views/academics-add-assay.png)
 ```
 
 Tips to record a GIF:
