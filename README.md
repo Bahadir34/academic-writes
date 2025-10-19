@@ -225,7 +225,7 @@ Open `http://localhost:5173` in your browser.
 ---
 
 ## License
-Specify your license here (e.g., MIT). Copyright © Bahadir34
+ Copyright © Bahadir34
 
 # ACADEMIC'S
 This project is created to share assays and overviews assays. 
