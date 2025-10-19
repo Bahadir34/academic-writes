@@ -204,9 +204,7 @@ Open `http://localhost:5173` in your browser.
 
 ## Screenshots & Demo GIF
 
-Add screenshots inside `front-end/public/` and link them here.
-
-```md
+ 
 ### Demo
 ![App demo](./front-end/public/academics.gif)
 
@@ -214,7 +212,7 @@ Add screenshots inside `front-end/public/` and link them here.
 ![Home](./project-views/academics-home.png)
 ![Assays](./project-views/academics-assays.png)
 ![Add Assay](./project-views/academics-add-assay.png)
-```
+ 
 
 Tips to record a GIF:
 - Use tools like ScreenToGif (Windows), Kap (macOS), or Peek (Linux).
