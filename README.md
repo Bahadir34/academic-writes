@@ -206,7 +206,7 @@ Open `http://localhost:5173` in your browser.
 
  
 ### Demo
-![App demo](./front-end/public/academics.gif)
+![App demo](./project-views/academics.gif)
 
 ### Screenshots
 ![Home](./project-views/academics-home.png)
@@ -214,10 +214,6 @@ Open `http://localhost:5173` in your browser.
 ![Add Assay](./project-views/academics-add-assay.png)
  
 
-Tips to record a GIF:
-- Use tools like ScreenToGif (Windows), Kap (macOS), or Peek (Linux).
-- Keep the clip short (10–20s), optimized below ~10MB.
-- Place the file at `front-end/public/demo.gif` and commit it.
 
 ---
 
