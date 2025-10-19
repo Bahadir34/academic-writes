@@ -5,7 +5,11 @@ const assaySchema = new Schema(
     pdfFile: {
       type: String,
       required: [true, "Load pdf!"],
-      default : "http://example.pdf"
+      default: "http://example.pdf",
+    },
+    description: {
+      type: String,
+      min: [20, "Description has to have minimum 20 characters!"],
     },
     category: {
       type: String,
@@ -19,6 +23,7 @@ const assaySchema = new Schema(
         "Religion",
         "History",
         "Geography",
+        "Software",
       ],
       required: [true, "Enter category"],
     },

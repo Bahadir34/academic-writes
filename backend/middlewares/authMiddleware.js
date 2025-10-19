@@ -5,6 +5,8 @@ export const tokenValidation = async (req, res, next) => {
   // middleware kullanilacaksa siralama daima bu sekilde olmali (req,res,next) =>{}
   const token = req?.cookies?.token || req.headers.authorization;
 
+  console.log("TOKEN : ", token);
+
   if (token === undefined || token === "") {
     return res.status(400).json({
       success: false,

@@ -5,14 +5,12 @@ import userRouter from "./routes/userRoutes.js";
 import authRouter from "./routes/authRoutes.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
- import assayRouter from "./routes/assayRoutes.js";
+import assayRouter from "./routes/assayRoutes.js";
 
 dotenvConfig();
 mongoConfig();
 
 const app = express();
-app.use(express.json());
-app.use(cookieParser());
 app.use(
   cors({
     origin: "http://localhost:5173",
@@ -20,6 +18,8 @@ app.use(
     credentials: true,
   })
 );
+app.use(express.json());
+app.use(cookieParser());
 
 app.use("/api/v1", userRouter);
 app.use("/api/v1", authRouter);

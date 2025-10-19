@@ -1,19 +1,22 @@
-import React from "react";
 import { categoriesList } from "../../utils/categories";
+import { Link } from "react-router-dom";
 
 const Categories = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold p-6 text-center md:text-left">Categories</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-9 gap-3 mx-auto px-6">
+      <h1 className="text-3xl font-bold p-6 text-center md:text-left">
+        Categories
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-10 gap-3 mx-auto px-6">
         {categoriesList.map((category) => (
-          <div
+          <Link
+            to={`/assays-by-category?category=${category.name}`}
             key={category.name}
             className="p-5  shadow-xl rounded-xl  flex flex-col gap-3 justify-center cursor-pointer"
           >
             <p className="text-xl font-bold text-zinc-400"> {category.name}</p>
             {category.icon}
-          </div>
+          </Link>
         ))}
       </div>
     </div>

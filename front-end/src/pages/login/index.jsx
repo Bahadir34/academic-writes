@@ -3,8 +3,13 @@ import { LuEye } from "react-icons/lu";
 import { LuEyeOff } from "react-icons/lu";
 import api from "../../configs/apiConfig";
 import { useNavigate } from "react-router-dom";
+import { GlobalContext } from "../../store";
+import { useContext } from "react";
 
 const Login = () => {
+  const { user, setUser } = useContext(GlobalContext);
+
+
   const [type, setType] = useState("password");
 
   const [errorNoUser, setErrorNoUser] = useState(false);
@@ -29,7 +34,9 @@ const Login = () => {
         password: password,
       })
       .then((data) => {
+        setUser(data.data.user)
         navigate("/");
+        
         console.log(data);
       })
       .catch((err) => {
